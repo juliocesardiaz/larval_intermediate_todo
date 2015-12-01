@@ -1,4 +1,3 @@
-// resources/views/layouts/app.blade.php_ini_loaded_file
 
 <!DOCTYPE html>
 <html lang="en">
