@@ -1,4 +1,3 @@
-// resources/views/tasks/index.blade.php 
 
 @extends('layouts.app')
 @section('content')
@@ -59,7 +58,9 @@
             							{{ csrf_field() }}
             							{{ method_field('DELETE') }}
 										
-           	 							<button>Delete Task</button>
+           	 							<button type="submit" id="delete-task-{{ $task->id }}" class="btn btn-danger">
+											<i class="fa fa-btn fa-trash"></i>Delete
+										</button>
         							</form>
 								</td>
 							</tr>

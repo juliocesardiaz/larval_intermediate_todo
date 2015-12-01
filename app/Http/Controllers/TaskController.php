@@ -11,7 +11,7 @@ use App\Repositories\TaskRepository;
 class TaskController extends Controller
 {
     /**
-     *The task repository instanceof
+     *The task repository instance
      * 
      * @var taskRepository
      */
@@ -70,11 +70,11 @@ class TaskController extends Controller
         * @param Task $task
         * @return Response
         */
-        public function destroy(Request $request, $task)
+        public function destroy(Request $request, Task $task)
         {
               $this->authorize('destroy', $task);
               
-              $task-delete(); 
+              $task->delete(); 
               
               return redirect('/tasks');
         }
